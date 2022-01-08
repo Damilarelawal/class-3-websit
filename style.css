@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li {
+      list-style-type: none;
+  }
+
+  body {
+    font-family: 'Kanit', sans-serif;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  header{
+      background-color: rgb(76, 76, 136);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      height: 73px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+
+  nav ul {
+      display: flex;
+  }
+
+  nav ul li a {
+    margin-left: 25px;
+    font-size: 13px;
+  }
+
+  nav ul li a:hover {
+    color: black;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+.firstPage {
+    height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+  background-color: rgb(238, 233, 233);
+  background-image: url(https://images.pexels.com/photos/267355/pexels-photo-267355.jpeg?cs=srgb&dl=pexels-pixabay-267355.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.firstPage1 {
+    margin-bottom: 200px;
+  }
+  .firstPage h1 {
+    font-size: 80px;
+    color:rgb(76, 76, 136);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .firstPage h2 {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  .firstPage p {
+    font-size: 22px;
+    color:white;
+    text-align: center;
+    margin-right: 40px;
+  }
+  
+  .resume {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+  }
+  
+  .aboutContent {
+    width: 50%;
+  }
+  
+  
+  .aboutContent h1{
+    font-size: 65px;
+    font-family: cursive;
+    color: rgb(76, 76, 136);;
+  }
+
+  .aboutContent h3 {
+    font-weight: 100;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .aboutContent button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: black;
+    background: linear-gradient( to right, #b0b0c4, #4a4a88);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+  }
+
+  .aboutContent button:hover {
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .resume .image {
+    width: 50%;
+  }
+  
+  .resume .image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
+
+  .contact {
+    text-align: center;
+    height: 60vh;
+    padding: 15px 0;
+    background-color: rgb(238, 233, 233);
+  }
+  
+  .contact .content {
+    text-align: center;
+    color: #4a4a88;
+  }
+
+  .icon ul {
+    display: flex;
+  }
+  .icon ul img {
+    height: 30px;
+    margin: 6px;
+    cursor: pointer;
+  }
+    
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-weight: 100px;
+  }
+
+
+  @media only screen and (max-width:700px) {
+
+    nav ul { 
+      width: 100%;
+      background: rgb(76, 76, 136);
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      left: 280px;
+      height: 5px;
+    }
+
+    .firstPage h1 {
+     margin-top: 100px;  
+    }
+
+    nav ul li a {
+      color: #fff;
+    }
+
+    .firstPage {
+      height: calc(100vh - 80px);
+      width: 120vh;
+    }
+
+    .aboutContent h1{
+      margin-top: 400px;
+      font-size: 39px;
+      word-wrap: normal;
+    }
+    
+    .aboutContent h3{
+      word-wrap: break-word;
+  }
+
+  .contact{
+    margin-top: 380px;
+    text-align: center;
+  }
+
+
+  .socials {
+    margin-top: 50px;
+  }
+
+  footer h5 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100px;
+  margin-top: 40px;
+    word-wrap: normal;
+  }
+
+  .icon {
+   margin-left: 250px;
+   margin-top: 130px;
+  }
